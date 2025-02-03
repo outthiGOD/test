@@ -1,0 +1,96 @@
+/* Основные стили для JavaFX приложения */
+
+/* Установка шрифта и цвета текста */
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #FFFFFF; /* Основной фон */
+}
+
+/* Цвет для заголовков групп */
+.group-title {
+    -fx-text-fill: #67BA80; /* Акцентирующий цвет */
+    -fx-font-weight: bold;
+}
+
+/* Стили для TableView */
+.table-view {
+    -fx-background-color: #F4E8D3; /* Дополнительный фон */
+    -fx-table-cell-border-color: #67BA80; /* Цвет границ ячеек */
+    -fx-border-color: #67BA80; /* Цвет границы таблицы */
+}
+.table-view .column-header-background {
+    -fx-background-color: #67BA80; /* Цвет фона заголовка колонок */
+}
+.table-view .column-header .text {
+    -fx-fill: black; /* Цвет текста заголовка колонок */
+    -fx-font-weight: bold;
+}
+
+/* Стили для кнопок */
+.button {
+    -fx-background-color: #67BA80; /* Акцентирующий цвет кнопки */
+    -fx-text-fill: #FFFFFF; /* Цвет текста кнопки */
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+.button:hover {
+    -fx-background-color: #5AA470; /* Темный оттенок для наведения */
+}
+.button:pressed {
+    -fx-background-color: #4A8C60; /* Темный оттенок для нажатия */
+}
+
+/* Стили для ComboBox */
+.combo-box {
+    -fx-background-color: #F4E8D3; /* Дополнительный фон */
+    -fx-border-color: #67BA80; /* Цвет границы */
+}
+.combo-box .arrow {
+    -fx-background-color: #67BA80; /* Цвет стрелки */
+}
+.combo-box .list-view {
+    -fx-background-color: #FFFFFF; /* Фон выпадающего списка */
+    -fx-border-color: #67BA80; /* Граница выпадающего списка */
+}
+
+/* Стили для TextField */
+.text-field {
+    -fx-background-color: #F4E8D3; /* Дополнительный фон */
+    -fx-border-color: #67BA80; /* Цвет границы */
+    -fx-text-fill: #000000; /* Цвет текста */
+}
+.text-field:focused {
+    -fx-border-color: #67BA80; /* Цвет границы при фокусе */
+}
+
+/* Стили для ListView */
+.list-view {
+    -fx-background-color: #F4E8D3; /* Дополнительный фон */
+    -fx-control-inner-background: #FFFFFF; /* Основной фон внутри элемента */
+    -fx-border-color: #67BA80; /* Акцентирующий цвет границы */
+}
+
+/* Стили для подсказок */
+.tooltip {
+    -fx-background-color: #F4E8D3; /* Дополнительный фон */
+    -fx-text-fill: #67BA80; /* Акцентирующий цвет текста */
+}
+
+/* Стили для ошибок */
+.error-label {
+    -fx-text-fill: red; /* Цвет текста для ошибок */
+    -fx-font-weight: bold;
+}
+
+/* Изменение цвета выделения */
+.selection-bar {
+    -fx-background-color: #67BA80; /* Акцентирующий цвет выделения */
+}
+
+.selection-bar:focused {
+    -fx-background-color: #67BA80; /* Акцентирующий цвет выделения в фокусе */
+}
+
+.selection-bar-text {
+    -fx-fill: #FFFFFF; /* Цвет текста на выделении */
+}

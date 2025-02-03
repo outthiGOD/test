@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.history.controller.HistoryController">
+    <!-- ComboBox для выбора партнера -->
+    <ComboBox fx:id="partnerComboBox" layoutX="10.0" layoutY="10.0" prefWidth="200.0"/>
+    <Button fx:id="findButton" layoutX="220.0" layoutY="10.0" onAction="#filterHistoryByPartner" text="Find"/>
+
+    <!-- Таблица с историей продаж -->
+    <TableView fx:id="historyTable" layoutX="10.0" layoutY="50.0" prefHeight="540.0" prefWidth="780.0">
+        <columns>
+            <TableColumn fx:id="partnerNameColumn" prefWidth="287.0" text="Partner Name"/>
+            <TableColumn fx:id="productNameColumn" prefWidth="258.0" text="Product Name"/>
+            <TableColumn fx:id="saleDateColumn" prefWidth="115.0" text="Sale Date"/>
+            <TableColumn fx:id="productCountColumn" prefWidth="119.0" text="Product Count"/>
+        </columns>
+    </TableView>
+</AnchorPane>

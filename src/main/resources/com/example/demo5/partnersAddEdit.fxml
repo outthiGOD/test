@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.controllers.PartnersAddEditController">
+   <children>
+      <TextField fx:id="nameField" alignment="CENTER" layoutX="226.0" layoutY="98.0" promptText="Name" />
+      <ComboBox fx:id="typeBox" layoutX="225.0" layoutY="128.0" prefWidth="150.0" promptText="Type" />
+      <TextField fx:id="ratingField" alignment="CENTER" layoutX="226.0" layoutY="158.0" promptText="Rating" />
+      <TextField fx:id="addressField" alignment="CENTER" layoutX="226.0" layoutY="188.0" promptText="Address" />
+      <TextField fx:id="fioField" alignment="CENTER" layoutX="226.0" layoutY="218.0" promptText="FIO" />
+      <TextField fx:id="phoneNumberField" alignment="CENTER" layoutX="226.0" layoutY="248.0" promptText="Phone number" />
+      <TextField fx:id="emailField" alignment="CENTER" layoutX="226.0" layoutY="277.0" promptText="Email" />
+      <Button fx:id="saveButton" layoutX="280.0" layoutY="337.0" mnemonicParsing="false" onMouseClicked="#saveEvent" text="Save" />
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#backEvent" text="Back" />
+      <TextField fx:id="innField" alignment="CENTER" layoutX="226.0" layoutY="307.0" promptText="INN" />
+   </children>
+</AnchorPane>
